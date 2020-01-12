@@ -1,0 +1,70 @@
+<html>
+
+	<head>
+	
+			<title> fingerGames</title>
+				
+	</head>
+	
+	<body>
+		
+		<p> How many fingers am I holding up? </p>
+		
+		<p>
+		
+		<input type="text" id="guess">
+		
+		<button id="checkGuess">Guess!</button>
+		
+		</p>
+	 		
+		<script type="text/javascript">
+		
+		document.getElementById("checkGuess").onclick = function() {
+		
+					/*var randomNumber = Math.random();
+					
+					randomNumber = randomNumber * 6;
+					
+					randomNumber = Math.floor(randomNumber);*/
+					
+					var y = Math.floor(Math.random() * 5 + 1); 
+					
+					var guess = 0; 
+					
+					var x = document.getElementById("guess").value;
+					
+					if( x == y){
+	
+
+						guess++;
+						alert ("Well done: You got it")
+					}	else if (x > y ) {
+					
+							guess++ 
+							alert("Your guess is wrong. Try smaller number")
+					
+					}
+										
+					
+					else {
+
+						guess++;
+						alert("Try big number");
+						}
+	
+				   }
+		
+		
+			//alert(Math.floor(Math.random() * 6));
+							
+		</script>
+				
+				
+		
+		
+	</body>
+
+</html>
+
+

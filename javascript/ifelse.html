@@ -1,0 +1,60 @@
+<html>
+
+	<head>
+	
+			<title> variables </title>
+				
+	</head>
+	
+	<body>
+			<p> what is the magic word </p>
+			<p><input type="text" id="magicWord"></p>
+			<p><button id="checkingMagicWord">Enter</button></p>
+	 		
+		<script type="text/javascript">
+		
+			
+			document.getElementById("checkingMagicWord").onclick = function(){
+			
+			
+				var valueEntered = "";
+								
+				valueEntered = document.getElementById("magicWord").value;
+				
+				var magicWord = "passwd";
+				
+				if (valueEntered == magicWord) {
+				
+					alert("you got it");
+				}else {
+				
+					alert("try again");
+				
+				}
+			
+			}
+			
+			
+			/*var x = 2;
+			
+			if (x == 1){
+			
+				alert("x is 2");
+			
+			} else{
+			
+				alert("x is not 1")
+			}
+			*/
+													
+		</script>
+		
+			
+				
+		
+		
+	</body>
+
+</html>
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+	<head>
+	
+			<title> jQuery </title>
+			
+			<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+			<style type="text/css">
+			
+		#square-red{
+				background-color:red;
+		    	}
+		#square-blue{
+				background-color:blue;
+										
+			 }
+		
+		.square{
+				width:100px;
+				height:100px;
+				margin:40px;
+				float:left;
+					}
+				
+		#circle-green{
+		
+				background-color:green;
+				height: 150px;
+				width: 150px;
+				border-radius: 50%;
+				float:left;
+				position:relative;
+				top:50px;
+		
+			 }
+			 
+		
+			</style>
+		
+	</head>
+	
+	
+	
+	<body>
+	
+	
+	
+			<div id="square-red" class="square"> </div>
+			<div id="square-blue" class="square"> </div>
+			<div id="circle-green" class="circle"> </div>
+			Hi there
+			
+			<script type="text/javascript">
+			
+				$(".square").click(function(){
+				
+					//alert("circle was clicked");
+					alert("square was clicked");
+				
+				});
+				
+			
+			</script>
+				
+	</body>
+
+</html>

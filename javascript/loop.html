@@ -1,0 +1,37 @@
+<html>
+
+	<head>
+	
+			<title> variables </title>
+				
+	</head>
+	
+	<div id="tweetsDiv"></div>
+	
+	<body>
+		
+		<script type="text/javascript">
+		
+			var tweetsString = "";
+			var tweets = ["Hi everyone", "I love cornflakes", "Every night :)", "Sweet dream"]
+		
+			for (var i = 0; i < tweets.length; i++){
+			
+					tweetsString = tweetsString + "<p>" + tweets[i] + "</p>";	
+					//alert(tweets[i]);
+					//console.log(tweets);
+			}
+			
+			document.getElementById("tweetsDiv").innerHTML = tweetsString;
+													
+		</script>
+		
+			
+				
+		
+		
+	</body>
+
+</html>
+
+
