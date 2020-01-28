@@ -37,7 +37,7 @@ if ($_POST){
 
       }
 
-      if (mail($emailTo, $subject, $content)){
+      if (mail($emailTo, $subject, $content,$headers)){
 
         $successMessage = '<div class="alert alert-success" role="alert"><p><strong> Your message was sent, we\'ll get back to you ASAP! </div>';
 
@@ -60,7 +60,7 @@ if ($_POST){
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-     <title>Hello, world!</title>
+     <title>validationForm!</title>
    </head>
    <body>
 
